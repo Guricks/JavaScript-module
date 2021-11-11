@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Work on bugs</title>
+</head>
+<body>
+
+<script>
+    // Ваше завдання, зробити так, щоб файл відкривався без помилок .
+   /* let a = 100;
+    let b = 500;
+    let c = "hello";
+    let d = "okten";
+    const x = 'constant value';
+    {
+        console.log(a);
+        x = 'new value';
+    }
+    let b = 'new value';
+
+    let result = 100 + y;
+
+    console(result);*/
+
+
+    let a = 100;
+    let b = 500;
+    let c = "hello";
+    let d = "okten";
+    const x = 'constant value';
+    {
+        a = 'new value';// - x є const, тобто не змінним. В console.log прописана (а), тому якщо перемістити нове значення змінної (а) вгору, усе виглядатиме логічним.
+        console.log(a);
+
+    }
+     b = 'new value'; // - змінна (Let b) уже існує. Варто задати нове начення тільки (b)
+
+    let result = 100 + "y"; // - змінної (y) не існує в даному завданні. Щоб усе прицювало потрібно задати рядкового значення (y), або підставити іншу існуючу змінну з завдання (a,b,c,d) або константу (х).
+
+    console.log(result); // - потрібно дописати (.log) щоб усе працювало.
+
+
+</script>
+
+</body>
+</html>
