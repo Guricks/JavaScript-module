@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <title>ClassWork</title>
+</head>
+<body>
+
+<script>
+    // Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result
+
+    let d = 11;
+    let f = 33;
+    let m = 77;
+    let o = 111;
+    let number = [d, 22, f, 44, 55, 66, m, 88, 99, o]; // сума всіх цифр =606
+    let result = (number[0] + number[1] + number[2] + number[3] + number[4] + number[5] + number[6] + number[7] + number[8] + number[9]);
+    console.log (result); //=606
+
+   // Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+    let book1 = {
+        title: 'For assignment',
+        pages: 777,
+        genre: 'education'
+    };
+    document.write(`${book1.title} <br> ${book1.pages} <br> ${book1.genre}`);
+
+    // Cтворити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+    let book2 = {
+        title: 'Extension',
+        pages: 454,
+        genre: 'entertainment',
+        writers: ['lorem', 'lorem ipsum']
+    };
+    console.log(book2.title); // = Extension.
+    console.log(book2.pages, book2.genre); // = 454 'entertainment'
+    console.log(book2.writers[0]); //= Lorem.
+    console.log(book2.writers[1]); // = Lorem ipsum.
+
+    // Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+    let books = [
+        {title: 'Game over', pages: 666, genre: 'horror', writers: ['Devil', 'God']},
+        {title: 'Earth', pages: 2021, genre: 'real life', writers: ['Homo Sapiens', 'Natural Selection']},
+        {title: 'Invisible Man', pages: 149, genre: ['novel', 'science fiction'], writers: 'Herbert Welz'}
+    ];
+    console.log(books[0]); // = {title: 'Game over', pages: 666, genre: 'horror', writers: Array(2)}
+    console.log(books[2].genre[1]); // = science fiction
+    console.log(books[1].title); // = Earth
+
+    for (const book of books) {
+        document.write(`<div>${book.title} ${book.pages} ${book.genre} ${book.writers} </div>`)}
+    /* = Game over 666 horror Devil,God
+         Earth 2021 real life Homo Sapiens,Natural Selection
+        Invisible Man 149 novel,science fiction Herbert Welz */
+
+    // Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значення площі зберігати в змінній s
+
+    let width = 10;
+    let height = 23;
+    let s = 10 * 23;
+    console.log(s); // = 230
+
+
+    //Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC), результат помістіть у змінну v.
+
+    let heightC = 10;
+    let dC = 4;
+    let rC = Math.sqrt(4)
+    console.log(rC); // = 2
+    const PI = 3.14;
+    let v = Math.PI * Math.pow(rC,2) * 10;
+    console.log(v); // = 125.60000000000001
+
+    // У прямокутного трикутника дві сторони n (зі значенням 3) та l (зі значенням 4).
+    // Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **)
+
+    let n = 3;
+    let l = 4;
+    let k = Math.sqrt(Math.pow(n, 2) + Math.pow(l, 2));
+    console.log(k); // = 5
+
+
+</script>
+
+
+
+</body>
+</html>
