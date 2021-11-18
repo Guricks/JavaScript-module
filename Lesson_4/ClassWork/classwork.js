@@ -148,7 +148,7 @@ function reverseArray(array) {
         const arrayElement = array[i];
         arrayNew.push(arrayElement);
     }
-    document.write(arrayNew)
+    document.write(arrayNew);
 }
 reverseArray (arrayNum = [3, 46, 77, 54, 2, 14, 55, 9]);
 
