@@ -66,5 +66,6 @@ function arrayObjectKeyValue (obj) {
     }
 return arrKeysValue;
 }
-document.write(arrayObjectKeyValue([{name: 'Dima', age: 13}, {model: 'Camry'}]))
+
+document.write(arrayObjectKeyValue([{name: 'Dima', age: 13}, {model: 'Camry'}]));
 
