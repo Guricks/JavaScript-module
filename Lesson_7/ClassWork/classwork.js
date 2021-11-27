@@ -23,11 +23,16 @@ function Car (model,manufacturer,yearOfIssue,maxSpeed,engineVolume) {
             }
         }
     }
+this.increaseMaxSpeed = function (newSpeed) {
+    return maxSpeed + newSpeed;
 }
-let car = new Car('BMW 8','Bayerische Motoren Werke AG', 2019,250, 4.4)
+
+}
+let car = new Car('BMW 8','Germany', 2019,250, 4.4)
 console.log(car);
-console.log(car.drive())
-car.info()
+    console.log(car.drive());
+    car.info();
+console.log(car.increaseMaxSpeed(50));
 
 
 
