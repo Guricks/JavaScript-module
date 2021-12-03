@@ -13,6 +13,7 @@ elementDiv.style.color = 'orange';
 elementDiv.style.fontSize = '26px';
 elementDiv.style.margin = '10px'
 elementDiv.style.border = '3px solid black';
+elementDiv.style.width = 'fit-content';
 
 document.body.append(elementDiv);
 
