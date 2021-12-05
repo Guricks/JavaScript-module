@@ -69,24 +69,26 @@ let wrapperArr = document.createElement('ul');
 let classCounter = 1;
 for (const elementArr of arrSayHi) {
     let wrapperElement = document.createElement('li');
-    wrapperElement.style.marginBottom = '20px';
+    wrapperElement.style.marginBottom = '5px';
+
     wrapperElement.innerText = `${elementArr.tittle} - ${elementArr.body}`;
 
     wrapperElement.setAttribute('class', 'class-' + classCounter);
     classCounter++;
 
+
     let buttonElement = document.createElement('button');
     buttonElement.innerText = 'Згорнути';
     buttonElement.style.marginLeft = '30px';
+    buttonElement.style.marginBottom = '20px'
 
-    // let classElement = document.getElementsByClassName('class-1');
    buttonElement.onclick = function () {
        wrapperElement.style.display = 'none';
    }
 
-    wrapperElement.appendChild(buttonElement);
-    wrapperArr.appendChild(wrapperElement);
-}
 
+    wrapperArr.appendChild(wrapperElement);
+    wrapperArr.appendChild(buttonElement)
+}
 
 document.body.append(wrapperArr);
