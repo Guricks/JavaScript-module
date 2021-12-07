@@ -38,15 +38,17 @@
 // }
 
 // - Создайте меню, которое раскрывается/сворачивается при клике
+
 // let wrapperMenu = document.getElementById('wrapperMenu');
 // let buttonMenu = document.getElementById('buttonMenu');
+// buttonMenu.onclick = function () {
+//     wrapperMenu.hidden = true;
 //     buttonMenu.onclick = function () {
-//             wrapperMenu.style.display = 'none';
-//             buttonMenu.onclick = function () {
-//                 wrapperMenu.style.display = 'block';
-//
-//         }
-//     }
+//          wrapperMenu.hidden = false;
+//         location.reload();
+// }
+// }
+
 
 
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
