@@ -33,7 +33,7 @@
 //         return document.write('Ви не ввели свій вік');
 //     }
 //     else {
-//         return document.write ('Введене число не коректне')
+//         return document.write ('Введене число не коректне');
 //     }
 // }
 
@@ -90,7 +90,7 @@ for (const elementArr of arrSayHi) {
 
 
     wrapperArr.appendChild(wrapperElement);
-    wrapperArr.appendChild(buttonElement)
+    wrapperArr.appendChild(buttonElement);
 }
 
 document.body.append(wrapperArr);
