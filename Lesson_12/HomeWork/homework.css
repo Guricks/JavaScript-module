@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapId {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.wrapper_div {
+    padding: 7px;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: gainsboro;
+}
+.father {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    background-color: #1e9482;
+}
