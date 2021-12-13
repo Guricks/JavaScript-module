@@ -53,7 +53,7 @@
 // https://jsonplaceholder.typicode.com/comments
 
 fetch('https://jsonplaceholder.typicode.com/comments')
-    .then(response => (response.json()))
+    .then(response => response.json())
     .then(comments => {
             console.log(comments)
             let fatherDiv = document.createElement('div');
