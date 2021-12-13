@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.father {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 5px;
+    justify-content: space-between;
+    row-gap: 10px;
+    background-color: #1e9482;
+}
+.user {
+    width: 18.90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px;
+    border: 2px solid black;
+    background-color: gray;
+    row-gap: 7px;
+}
+.address,.geo {
+    padding: 5px 50px;
+}
+
+.company {
+    padding: 0 25px;
+}
+.phone {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px ;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    padding: 0 5px;
+    border: 2px solid darkred;
+   background-color: gainsboro;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    background-color: wheat;
+    border: 2px solid lightseagreen;
+    padding: 0 5px;
+
+}
