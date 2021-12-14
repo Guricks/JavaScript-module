@@ -42,17 +42,30 @@ fetch('https://jsonplaceholder.typicode.com/users')
             buttonPosts.innerText = 'Enter posts';
 
             buttonPosts.onclick = () => {
+                let fatherPost = document.createElement('div');
+                fatherPost.classList.add('father-post');
+                fatherPost.style.width = '100%';
+                let btnPost = document.createElement('button');
+                btnPost.classList.add('btn');
+                btnPost.innerText = 'Close';
+
                 fetch('https://jsonplaceholder.typicode.com/posts')
                     .then(response => response.json())
                     .then(posts => {
                         console.log(posts)
+
                         for (const post of posts) {
                             if (user.id === post.userId) {
                                 let postDiv = document.createElement('div');
-                                postDiv.classList.add('post');
+                                    postDiv.classList.add('post');
+                                postDiv.style.width = '100%'
                                 postDiv.innerHTML = `<p>ID: ${post.id}</p>
                                  <h3>${post.title}</h3>
                                    <p>${post.body}</p>`;
+                                btnPost.onclick = () => {
+                                    fatherPost.style.width = '0';
+                                }
+
 
 
 
@@ -61,6 +74,12 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                 buttonComments.innerText = 'Enter comment';
 
                                 buttonComments.onclick = () => {
+                                    let fatherComment = document.createElement('div');
+                                    fatherComment.classList.add('father-comm');
+                                    fatherComment.style.width = '100%';
+                                    let btnComment = document.createElement('button');
+                                    btnComment.classList.add('btn');
+                                    btnComment.innerText = 'Close';
                                     fetch('https://jsonplaceholder.typicode.com/comments')
                                         .then(value => value.json())
                                         .then(comments => {
@@ -72,19 +91,26 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                                          <h3>${comment.name}</h3>
                                                         <h5>${comment.email}</h5>
                                                         <p>${comment.body}</p>`;
+                                                    btnComment.onclick = () => {
 
-                                                    postDiv.appendChild(commentDiv);
+                                                        fatherComment.style.width = '0';
+                                                    };
+
+                                                    fatherComment.appendChild(commentDiv);
+                                                    fatherComment.appendChild(btnComment);
+                                                    document.body.append(fatherComment);
                                                 }
                                             }
                                         })
-                                    buttonComments.disabled = true;
                                 }
                                 postDiv.appendChild(buttonComments);
-                                userDiv.appendChild(postDiv);
+                                fatherPost.appendChild(btnPost);
+                                fatherPost.appendChild(postDiv);
+                                document.body.append(fatherPost);
                             }
                         }
                     })
-                buttonPosts.disabled = true;
+
             }
             userDiv.appendChild(addressDiv);
             addressDiv.appendChild(geoDiv);

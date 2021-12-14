@@ -39,9 +39,30 @@
     flex-direction: column;
     row-gap: 7px;
     padding: 0 5px;
-    border: 2px solid darkred;
+    margin-bottom: 10px;
    background-color: gainsboro;
 }
+.father-post {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.btn {
+    background-color: lightseagreen;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
 .comment {
     display: flex;
     flex-direction: column;
@@ -49,5 +70,16 @@
     background-color: wheat;
     border: 2px solid lightseagreen;
     padding: 0 5px;
-
+}
+.father-comm {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
 }
